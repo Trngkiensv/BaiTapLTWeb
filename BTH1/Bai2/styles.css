@@ -1,0 +1,22 @@
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    width: 600px;
+}
+
+p {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.content {
+    height: 10rem;
+}
+
+.left {
+    width: 15%;
+}
