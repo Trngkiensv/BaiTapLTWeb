@@ -1,0 +1,45 @@
+
+table, th, td {
+    border:1px solid black;
+}
+
+table {
+    box-shadow: 1px 1px 1px;
+    width: 600px;
+}
+
+.top {
+    background-color: #d3d3d3;
+    height: 3rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.content.left {
+    background-color: #eee8aa;
+    text-align: left;
+    vertical-align: top;
+}
+
+.content.right {
+    background-color: #fffafa;
+    text-align: left;
+    vertical-align: top;
+}
+
+.content {
+    height: 15rem;
+}
+
+.bottom {
+    background-color: #a9a9a9;
+    text-align: center;
+}
+
+b.table-title {
+    font-size: 2rem;
+}
+
+b, p {
+    margin: 0;
+}
