@@ -1,0 +1,38 @@
+body {
+    width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-section {
+    background-color: #c4996c;
+    height: 120px;
+}
+
+.company-img {
+    background-color: #a8a9ad;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.footer-section {
+    background-color: #115d7f;
+}
+
+p {
+    color: white;
+    display: inline-block;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.item {
+    background-color: #a8a9ad;
+}
+
+h1 {
+    font-weight: normal;
+}
