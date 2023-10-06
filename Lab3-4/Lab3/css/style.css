@@ -1,0 +1,43 @@
+#container {
+
+}
+
+#container .menu {
+    width: 1100px;
+    background-color: #eeeeee;
+    margin: auto;
+    border-left: 6px solid #8b0000;
+    border-bottom: 2px solid #8b0000;
+}
+
+.menu > .menu-item {
+    display: inline-block;
+    padding: 20px 20px;
+    position: relative;
+}
+
+#container .menu-item:hover {
+    background-color: #8b0000;
+    color: white;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 57px;
+    left: -4px;
+}
+
+#container .menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu .menu-item {
+    width: 140px;
+    color: black;
+    background-color: #eeeeee;
+    display: inline-block;
+    padding: 20px 20px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
