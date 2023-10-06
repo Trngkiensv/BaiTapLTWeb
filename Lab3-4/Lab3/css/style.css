@@ -41,3 +41,7 @@
     position: relative;
     border-bottom: 1px solid black;
 }
+
+.menu-item {
+    cursor: pointer;
+}
