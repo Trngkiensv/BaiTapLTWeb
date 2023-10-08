@@ -29,12 +29,16 @@ p.title {
 }
 
 .input_form > input {
-    width: 96%;
-    height: 38px;
+    width: 177px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0px 11px;
     margin-bottom: 12px;
     border-radius: 10px;
     border: none;
     box-shadow: -2px 7px 20px 0px #cccccc;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 ::placeholder {
@@ -42,7 +46,6 @@ p.title {
     opacity: 1;
     font-size: 10px;
     font-weight: bold;
-    padding-left: 10px;
     /* Firefox */
 }
 
@@ -109,11 +112,15 @@ p.title {
     color: rgb(255, 19, 19);
 }
 .sign_up {
-
+    margin-top: 50px;
+    text-align: center;
 }
 
 .sign_up a {
-
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    color: #3b3b3b;
 }
 
 
