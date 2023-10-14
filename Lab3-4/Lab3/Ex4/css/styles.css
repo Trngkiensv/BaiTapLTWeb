@@ -41,7 +41,7 @@
 h2.title {
     color: #7ed321;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 20px;
 }
 
@@ -53,6 +53,7 @@ h2.title {
     position: relative;
     margin-bottom: 12px;
     overflow: hidden;
+    display: flex;
 }
 
 .form_input > i, .form_input > input {
@@ -61,15 +62,16 @@ h2.title {
 
 .form_input > i {
     box-sizing: border-box;
-    width: 10%;
     text-align: center;
     padding: 0px 0px;
     vertical-align: middle;
     float: left;
-    position: absolute;
+    position: relative;
     top: 15%;
     border-right: 1px solid #b8b8b8;
     color: #b8b8b8;
+    height: 72%;
+    flex: 0 0 40px;
 }
 
 .form_input > input {
@@ -79,6 +81,7 @@ h2.title {
     border: none;
     float: right;
     font-size: 11px;
+    position: relative;
 }
 
 ::placeholder {
@@ -157,6 +160,10 @@ h2.title {
     height: 100%;
 }
 
+.row.payment .form_input {
+    display: block;
+}
+
 .row.payment button{
     width: 50%;
     border: none;
@@ -181,11 +188,57 @@ h2.title {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.date select {
+    width: 100%;
+    font-size: 11px;
+    padding: 0px 10px;
+}
+
+.date .col-6:first-child {
+    padding-right: 0px;
+}
+
+.date .col-6:last-child {
+    padding-left: 0px;
+}
+
+.tacbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tacbox input {
+    width: 25px;
+    height: 17px;
+    background-color: white;
+    border-radius: 6px;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.tacbox input:checked {
+    background-color: #7ed321;
+}
+
+.tacbox label {
+    margin-left: 10px;
+    font-size: 11px;
+    color: #bcb6b6;
 }

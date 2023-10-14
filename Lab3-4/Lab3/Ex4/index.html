@@ -77,30 +77,54 @@
             <div class="col-12">
               <div class="form_input">
                 <div class="tab">
-                  <button class="tablinks" onclick="openCity(event, 'London')"><i class="bi bi-credit-card-2-back-fill"></i> Credit Card </button><button class="tablinks" onclick="openCity(event, 'Paris')"><i class="bi bi-credit-card-2-back-fill"></i> Paypal</button>
+                  <button class="tablinks" onclick="openCity(event, 'credit_card')"><i class="bi bi-credit-card-2-back-fill"></i> Credit Card </button><button class="tablinks" onclick="openCity(event, 'Paris')"><i class="bi bi-credit-card-2-back-fill"></i> Paypal</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="London" class="tabcontent">
+        <div id="credit_card" class="tabcontent">
           <div class="col-12">
             <div class="form_input">
               <i class="bi bi-credit-card"></i>
-              <input type="number" class="form-control" id="cnum" placeholder="Card Number" name="cnum">
+              <input type="number" class="form-control" id="cre_ca_num" placeholder="Card Number" name="cre_ca_num">
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
               <div class="form_input">
-                <i class="bi bi-credit-card"></i>
-                <input type="number" class="form-control" id="cnum" placeholder="Card Number" name="cnum">
+                <i class="bi bi-person-fill"></i>
+                <input type="number" class="form-control" id="cvc" placeholder="Card CVC" name="cvc">
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="form_input">
-                <i class="bi bi-credit-card"></i>
-                <input type="number" class="form-control" id="cnum" placeholder="Card Number" name="cnum">
+            <div class="col-sm-6 date">
+              <div class="row">
+                <div class="col-6">
+                  <select id="month" name="month" class="form_input">
+                    <option value="01">01 Jan</option>
+                    <option value="02">02 Feb</option>
+                    <option value="03">03 Mar</option>
+                    <option value="04">04 Apr</option>
+                    <option value="05">05 May</option>
+                    <option value="06">06 Jun</option>
+                    <option value="07">07 Jul</option>
+                    <option value="08">08 Aug</option>
+                    <option value="09">09 Sep</option>
+                    <option value="10">10 Oct</option>
+                    <option value="11">11 Nov</option>
+                    <option value="12">12 Dec</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <select id="year" name="year" class="form_input">
+                    <!-- Tạo các option từ 1 đến 31 cho ngày -->
+                    <script>
+                      for (var i = 1800; i <= new Date().getFullYear(); i++) {
+                        document.write('<option value="' + i + '">' + i + '</option>');
+                      }
+                    </script>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
@@ -112,8 +136,17 @@
             <input type="text" class="form-control" id="fname" placeholder="Full Name" name="fname">
           </div>
         </div>
+
       </div>
-      
+      <div class="row part">
+        <div class="col-sm">
+          <h2 class="title">Terms and Conditions</h2>
+          <div class="tacbox">
+            <input id="checkbox" type="checkbox">
+            <label for="checkbox">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+          </div>
+        </div>
+      </div>
     </form>
   </div>
 
