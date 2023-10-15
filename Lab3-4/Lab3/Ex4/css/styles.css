@@ -84,6 +84,10 @@ h2.title {
     position: relative;
 }
 
+.form_input > input:focus {
+    box-shadow: none;
+}
+
 ::placeholder {
     color: #b8b8b8;
     opacity: 1;
