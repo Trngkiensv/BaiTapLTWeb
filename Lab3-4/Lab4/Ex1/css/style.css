@@ -1,0 +1,10 @@
+.btn {
+    border: 1px solid black;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.btn:hover {
+    border: 1px solid black;
+}
+
