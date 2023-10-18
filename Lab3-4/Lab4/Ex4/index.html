@@ -10,24 +10,23 @@
 <body>
     <div class="container-small p-5 mx-auto border border-primary rounded mt-5">
         <form class="form-group">
-            <!-- <label for="text_field" class="">Nhập một dòng</label>
-            <input type="text" id="text_field" class="form-control"> -->
             <div class="mb-3">
-              <label for="" class="form-label">Nhập một dòng</label>
+              <label for="tfield" class="form-label">Dòng văn bản</label>
               <input type="text"
-                class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-              <small id="helpId" class="form-text text-muted">Help text</small>
+                class="form-control" name="field" id="tfield" placeholder="Nhập một dòng">
             </div>
             <div class="mb-3">
-                <label for="text_area" class="">Nhập một đoạn văn</label>
-                <textarea class="form-control" name="" id="" rows="3"></textarea>
+                <label for="tarea" class="area">Đoạn văn bản</label>
+                <textarea class="form-control" name="area" id="tarea" rows="5" placeholder="Nhập một đoạn văn"></textarea>
             </div>
-            <button type="button" class="btn btn-outline-primary mx-auto">Button</button>
+            <div class="d-flex justify-content-center">
+                <button type="button" onclick="count()" class="btn btn-outline-primary mx-auto w-100 bg-primary text-white">Button</butto>
+            </div>
             
         </form>
         
     </div>
-
+    <script src="js/count.js"></script>
     <script src="../Ex1/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
