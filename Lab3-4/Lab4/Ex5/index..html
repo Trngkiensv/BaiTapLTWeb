@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <video autoplay muted loop class="video" id="video">
+        <source src="trans.webm">
+    </video>
+    <div class="rotate">
+        <img src="pngegg (1).png" alt="image_rotate" id="image">
+    </div>
+
+    <script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script>
+        
+        // window.onload = function () {
+        //     var element = document.getElementById('video');
+        //     element.muted = true;
+        //     element.play();
+        //     }
+        $(document).ready(function () {
+            // Góc quay ban đầu
+            let angle = 0;
+            let temp = 0;
+            // Tốc độ quay (độ/giây)
+            const rotationSpeed = 5000; // 90 độ/giây
+
+            // Lấy tham chiếu đến hình ảnh
+            const $image = $("#image");
+
+            // Hàm quay hình ảnh
+            function rotateImage(timestamp) {
+                if (angle<1000) {
+                    temp+=0.05;
+                    angle+=temp;
+                } else {
+                    angle+=temp;
+                }
+                // angle += (rotationSpeed / 1000);
+                $image.css({ "transform": `rotate(-${angle}deg)` });
+                window.requestAnimationFrame(rotateImage);
+            }
+
+            // Bắt đầu vòng lặp vô hạn
+            window.requestAnimationFrame(rotateImage);  
+        });
+
+        
+    </script>
+</body>
+</html>
