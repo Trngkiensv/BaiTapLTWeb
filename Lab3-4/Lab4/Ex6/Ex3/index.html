@@ -15,9 +15,9 @@
             <form action="#" class="sign_in">
                 <p class="title">Sign In</p>
                 <div class="input_form">
-                    <input type="email" id="email" name="email" placeholder="username or email">
-                    <input type="password" id="pwd" name="pwd" minlength="6" placeholder="password">
-                    <input type="submit" class="submit">
+                    <input type="email" id="email" name="email" placeholder="username or email" required pattern=".*@.+.*" title="example@abc.com">
+                    <input type="password" id="pwd" name="pwd" minlength="6" placeholder="password" required>
+                    <button type="submit">Sign in</button>
                 </div>
                 <div class="other_login">
                     <p>Or login with</p>

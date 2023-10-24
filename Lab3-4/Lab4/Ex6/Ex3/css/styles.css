@@ -28,7 +28,7 @@ p.title {
     margin-bottom: 35px;
 }
 
-.input_form > input {
+.input_form > input, button {
     width: 177px;
     height: 40px;
     box-sizing: border-box;
@@ -63,7 +63,7 @@ p.title {
 
 }
 
-.input_form .submit {
+.input_form button {
     background-color: #bd59d7;
     height: 30px;
     width: 100px;
