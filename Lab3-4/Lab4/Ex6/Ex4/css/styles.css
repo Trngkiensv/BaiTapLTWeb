@@ -1,0 +1,248 @@
+* {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .container-small {
+        width: 300px;
+    }
+    .container-large {
+        width: 970px;
+    } 
+} 
+@media (min-width: 992px) {
+    .container-small {
+        width: 500px;
+    }
+    .container-large {
+        width: 1170px;
+    } 
+} 
+@media (min-width: 1200px) {
+    .container-small {
+        width: 700px;
+    }
+    .container-large {
+        width: 1500px;
+    } 
+}
+
+.container-small, .container-large {
+    max-width: 100%;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 20px solid #e2e2e2;
+    border-top: 10px solid #e2e2e2;
+    border-bottom: 10px solid #e2e2e2;
+}
+
+h2.title {
+    color: #7ed321;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.form_input {
+    background-color: #f9f9f9;
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 12px;
+    overflow: hidden;
+    display: flex;
+}
+
+.form_input > i, .form_input > input {
+    display: inline-block;
+}
+
+.form_input > i {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0px 0px;
+    vertical-align: middle;
+    float: left;
+    position: relative;
+    top: 15%;
+    border-right: 1px solid #b8b8b8;
+    color: #b8b8b8;
+    height: 72%;
+    flex: 0 0 40px;
+}
+
+.form_input > input {
+    width: 90%;
+    height: 100%;
+    background-color: #ee828200;
+    border: none;
+    float: right;
+    font-size: 11px;
+    position: relative;
+}
+
+.form_input > input:focus {
+    box-shadow: none;
+}
+
+::placeholder {
+    color: #b8b8b8;
+    opacity: 1;
+    font-size: 11px;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: #b8b8b8;
+    font-size: 11px;
+}
+
+.part {
+    margin-bottom: 20px;
+}
+
+.row.date {
+    padding: 0px 0px 0px 12px;
+}
+
+.form_input.date {
+    width: 30%;
+    padding: 0;
+}
+
+.form_input.date:not(.form_input.date:last-child) {
+    margin-right: 6px;
+}
+
+.form_input.date input {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.row.gender {
+    padding: 0px 12px;
+}
+
+.row.gender .form_input {
+    text-align: center;
+}
+
+.row.gender .form_input .check {
+    opacity: 0.01;
+    z-index: 100;
+}
+
+.row.gender .form_input label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    padding: 12px 8px;
+    font-size: 11px;
+    color: #8e8e8e;
+}
+
+.row.gender .form_input input[type="radio"]:checked+label,
+.Checked+label {
+  background: #7ed321;
+  color: black;
+}
+
+.row.gender .form_input label:hover {
+    /* background-color: #7ed321; */
+    background-color: #8e8e8e;
+    color: black;
+}
+
+.row.payment .tab,.row.payment button{
+    height: 100%;
+}
+
+.row.payment .form_input {
+    display: block;
+}
+
+.row.payment button{
+    width: 50%;
+    border: none;
+    background-color: #ffffff00;
+    font-size: 11px;
+    color: #b9b9b9;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background: #7ed321;
+    color: black;
+}
+
+.row.payment button:first-child{
+    border-right: 1px solid #b9b9b9;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.date select {
+    width: 100%;
+    font-size: 11px;
+    padding: 0px 10px;
+}
+
+.date .col-6:first-child {
+    padding-right: 0px;
+}
+
+.date .col-6:last-child {
+    padding-left: 0px;
+}
+
+.tacbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tacbox input {
+    width: 25px;
+    height: 17px;
+    background-color: white;
+    border-radius: 6px;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.tacbox input:checked {
+    background-color: #7ed321;
+}
+
+.tacbox label {
+    margin-left: 10px;
+    font-size: 11px;
+    color: #bcb6b6;
+}

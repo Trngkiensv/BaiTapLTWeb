@@ -1,0 +1,118 @@
+.form_container {
+    box-sizing: border-box;
+    margin: auto;
+    width: 600px;
+    height: 545px;
+    border: 10px solid #e7e7e7;
+    border-radius: 13px
+}
+
+form {
+    padding: 0px 30px;
+}
+
+p.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 23px;
+    color: #343233;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+form .input_form {
+    margin-bottom: 14px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    height: 50px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    padding: 10px 15px;
+    position: relative; 
+}
+
+.fname {
+
+}
+
+.input_form label {
+    margin-bottom: 5px;
+    display: block;
+    color: #343233;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.input_form input {
+    width: 100%;
+    border: none;
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: #ced0d0;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: #ced0d0;
+}
+
+.contact_container .email, .contact_container .phone {
+    display: inline-block;
+    width: 251px;
+    padding: 12px 12px;
+}
+
+.contact_container .email {
+    margin-right: 12px;
+}
+
+.input_form select#select {
+    background-color: #f7f7f7;
+    width: -webkit-fill-available;
+    border: 1px solid #f7f7f7;
+    font-weight: bold;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(/Lab3-4/Lab3/Ex2/img/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 5px 8px;
+    background-position: 99% 53%;
+}
+
+#select option {
+
+}
+
+.input_form.input_text_field {
+    background-color: #fff;
+    height: 100px;
+
+}   
+
+.input_form.input_text_field textarea {
+    border: none;
+    width: 485px;
+    height: 69px;
+    resize: none;
+}
+
+.submit_btn {
+    width: 100%;
+    border: none;
+    height: 1.8rem;
+    background-color: #333333;
+    border-radius: 999px;
+    color: white;
+    font-size: 0.7rem;
+}
+
+div.input_form:has(input:invalid, select:invalid, textarea:invalid) {
+    border: 1px solid red;
+}
+
